@@ -8,6 +8,6 @@ api.post('/signup', userController.signUp)
 api.post('/login', userController.login)
 api.put('/update', userController.updateUser)
 api.get('/all', userController.getUsers)
-api.get('/', userController.getUser)
+api.get('/:id', userController.getUser)
 
 module.exports = api
